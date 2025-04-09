@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> inscription </title>
+    <style> 
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #aaaa ;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            padding: 20px;
+            background: rgb(204, 174, 174);
+            box-shadow: 0px 0px 10px #aaa ;
+            border-color: #aaa ;
+            border-radius: 5px;
+        }
+        input{
+            padding: 3px;
+            color: antiquewhite;
+            border: 1px solid #aaa;
+        }
+        input [type="submit"]{
+            width: 50%;
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        input [type="submit"]:hover{
+            background-color: aqua;
+
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+   <h2> Formulaire d'inscription </h2>
+   <form action="traitement.php"  method="post">
+   <label for="nom"> nom :</label>
+   <input type="text" name="nom" required>
+   <label for="email"> email:</label>
+   <input type="email" name="email" required>
+   <label for="password"> mot de pass:</label>
+   <input type="password" name="password" required>
+   <label for="age"> age:</label>
+   <input type="number" name="age" required>
+   <label for="numero"> numero:</label>
+   <input type="number" name="numero" required>
+   <label for="date"> date de naissance:</label>
+   <input type="date" name="date" required>
+   
+   
+   <input type="submit" name="envoyer" >
+
+
+
+
+   </form>
+    
+</body>
+</html>
